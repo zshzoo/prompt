@@ -1,0 +1,6 @@
+[submodule "external/powerlevel10k"]
+	path = external/powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k
+[submodule "external/pure"]
+	path = external/pure
+	url = https://github.com/sindresorhus/pure
