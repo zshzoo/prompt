@@ -34,7 +34,6 @@
   typeset -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
     # os_icon               # os identifier
     dir                     # current directory
-    vcs                     # git status
     prompt_char             # prompt symbol
   )
 
@@ -109,6 +108,7 @@
     # battery               # internal battery
     # wifi                  # wifi speed
     # example               # example user-defined segment (see prompt_example function below)
+    vcs                     # git status
   )
 
   # Defines character set used by powerlevel10k. It's best to let `p10k configure` set it for you.
