@@ -16,7 +16,20 @@ Using Zsh's built-in prompt system, this plugin will allow you to easily use pop
 Set your Zsh theme like so:
 
 ```zsh
-zstyle ':zshzoo:prompt' theme 'starship'
+# valid themes: pure, powerlevel10k, starship
+zstyle ':zshzoo:prompt' 'theme' 'powerlevel10k'
+```
+
+If you have a specific theme configuration you want to use, you can specify that with a second parameter to your `zstyle`. This plugin comes with zshzoo P10k and starship configs.
+
+```zsh
+zstyle ':zshzoo:prompt' 'theme' 'powerlevel10k' 'zshzoo'
+```
+
+If you use powerlevel10k, load this plugin first and you'll get the advantage of P10k's instant prompt. If you want to skip instaprompt, you can with this `zstyle`:
+
+```zsh
+zstyle ':zshzoo:prompt:powerlevel10k:instaprompt' skip 'yes'
 ```
 
 ## Installation
