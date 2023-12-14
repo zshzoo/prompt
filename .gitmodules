@@ -4,3 +4,6 @@
 [submodule "external/pure"]
 	path = external/pure
 	url = https://github.com/sindresorhus/pure
+[submodule "external/async"]
+	path = external/async
+	url = https://github.com/mafredri/zsh-async
