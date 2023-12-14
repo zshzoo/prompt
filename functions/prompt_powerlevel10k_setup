@@ -1,1 +1,13 @@
-../external/powerlevel10k/powerlevel10k.zsh-theme
+#!/bin/zsh
+
+# function prompt_powerlevel10k_setup {
+0=${(%):-%x}
+if [[ -n "$1" ]]; then
+  local -a configs=(
+	${ZDOTDIR:-${XDG_CONFIG_HOME:-$HOME/.config}/zsh}/themes/${1}.p10k.zsh(N)
+    ${0:A:h:h}/themes/${1}.p10k.zsh(N)
+  )
+  (( $#configs )) && source $configs[1]
+fi
+source ${0:A:h:h}/external/powerlevel10k/powerlevel10k.zsh-theme
+# }
